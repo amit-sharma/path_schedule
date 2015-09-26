@@ -21,8 +21,8 @@ static void main_window_unload(Window *window) {
 }
 
 static void load_resource() {
-  // Get resource and size
-  ResHandle handle = resource_get_handle(PATH_STOPS_FILE);
+  // Get resource and sizes
+  ResHandle handle = resource_get_handle(RESOURCE_ID_PATH_STOPS_FILE);
   size_t res_size = resource_size(handle);
 
   // Copy to buffer
