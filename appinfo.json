@@ -1,0 +1,19 @@
+{
+    "appKeys": {},
+    "capabilities": [
+        ""
+    ],
+    "companyName": "amit_sharma@live.com",
+    "longName": "path_schedule",
+    "projectType": "native",
+    "resources": {
+        "media": []
+    },
+    "sdkVersion": "3",
+    "shortName": "path_schedule",
+    "uuid": "4438f74e-45b3-4cd9-84de-dab3e6c5a7b4",
+    "versionLabel": "1.0",
+    "watchapp": {
+        "watchface": false
+    }
+}
