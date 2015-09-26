@@ -7,7 +7,13 @@
     "longName": "path_schedule",
     "projectType": "native",
     "resources": {
-        "media": []
+        "media": [
+            {
+                "file": "data/stops.txt",
+                "name": "PATH_STOPS_FILE",
+                "type": "raw"
+            }
+        ]
     },
     "sdkVersion": "3",
     "shortName": "path_schedule",
