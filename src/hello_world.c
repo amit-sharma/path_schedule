@@ -1,5 +1,7 @@
 #include <pebble.h>
-
+#include <stdio.h>
+#include <string.h>
+  
 Window *s_main_window;
 TextLayer *text_layer;
 static TextLayer *s_output_layer;
@@ -28,9 +30,17 @@ static void load_resource() {
   // Copy to buffer
   s_buffer = (char*)malloc(res_size);
   resource_load(handle, (uint8_t*)s_buffer, res_size);
+  char* pch = strtok(s_buffer, ",");
+  APP_LOG(APP_LOG_LEVEL_DEBUG, pch);
+  pch=strtok(NULL, "\n");
+  APP_LOG(APP_LOG_LEVEL_DEBUG, pch);
+  pch=strtok(NULL, "\r\n");
+  APP_LOG(APP_LOG_LEVEL_DEBUG, pch);
+  pch=strtok(NULL, ",");
 
+  APP_LOG(APP_LOG_LEVEL_DEBUG, pch);
   // Show in TextLayer
-  text_layer_set_text(s_output_layer, s_buffer);
+  text_layer_set_text(s_output_layer, pch);
 }
 
 
